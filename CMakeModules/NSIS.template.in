@@ -341,9 +341,9 @@ Section "${APPLICATION_NAME}" SEC_TOMAHAWK_PLAYER
     File "${QT_DLL_PATH}\libwebp-5.dll"
 
     ;Boost fnord
-    File "${QT_DLL_PATH}\icuuc53.dll"
-    File "${QT_DLL_PATH}\icudata53.dll"
-    File "${QT_DLL_PATH}\icui18n53.dll"
+    File "${QT_DLL_PATH}\icuuc56.dll"
+    File "${QT_DLL_PATH}\icudata56.dll"
+    File "${QT_DLL_PATH}\icui18n56.dll"
 
    ;SQLite driver
    SetOutPath "$INSTDIR\sqldrivers"
