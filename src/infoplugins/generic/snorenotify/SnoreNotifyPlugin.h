@@ -24,7 +24,7 @@
 #include "../../InfoPluginDllMacro.h"
 
 #include "infosystem/InfoSystem.h"
-#include <snore/core/snore.h>
+#include <libsnore/snore.h>
 
 namespace Tomahawk
 {
@@ -63,9 +63,8 @@ protected slots:
     void slotActionInvoked(Snore::Notification n);
 
 private:
-    void notifyUser( InfoType type, const QString &messageText, Snore::Icon icon = Snore::Icon() );
+    void notifyUser( InfoType type, const QString &messageText, Snore::Icon icon );
     void addAlert( Tomahawk::InfoSystem::InfoType type, const QString &title );
-    Snore::SnoreCore *m_snore;
     Snore::Application m_application;
     Snore::Icon m_defaultIcon;
     QHash< Tomahawk::InfoSystem::InfoType, Snore::Alert > m_alerts;
