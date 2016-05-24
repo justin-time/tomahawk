@@ -1,71 +1,175 @@
-<!DOCTYPE RCC><RCC version="1.0">
-<qresource>
-<file>./data/images/add-friend-button-pressed.png</file>
-<file>./data/images/add-friend-button-rest.png</file>
-<file>./data/images/avatar-dude-plus.png</file>
-<file>./data/images/avatar-dude.png</file>
-<file>./data/images/back-pressed.png</file>
-<file>./data/images/back-rest.png</file>
-<file>./data/images/magnifying-glass.png</file>
-<file>./data/images/no-album-art-placeholder.png</file>
-<file>./data/images/now-playing-panel.png</file>
-<file>./data/images/now-playing-speaker.png</file>
-<file>./data/images/pause-pressed.png</file>
-<file>./data/images/pause-rest.png</file>
-<file>./data/images/play-pressed.png</file>
-<file>./data/images/play-rest.png</file>
-<file>./data/images/playlist-icon.png</file>
-<file>./data/images/repeat-1-on-pressed.png</file>
-<file>./data/images/repeat-1-on-rest.png</file>
-<file>./data/images/repeat-all-on-pressed.png</file>
-<file>./data/images/repeat-all-on-rest.png</file>
-<file>./data/images/repeat-off-pressed.png</file>
-<file>./data/images/repeat-off-rest.png</file>
-<file>./data/images/search-box-dismiss-x.png</file>
-<file>./data/images/search-box.png</file>
-<file>./data/images/seek-and-volume-knob-pressed.png</file>
-<file>./data/images/seek-and-volume-knob-rest.png</file>
-<file>./data/images/seek-slider-bkg.png</file>
-<file>./data/images/seek-slider-level.png</file>
-<file>./data/images/shuffle-off-pressed.png</file>
-<file>./data/images/shuffle-off-rest.png</file>
-<file>./data/images/shuffle-on-pressed.png</file>
-<file>./data/images/shuffle-on-rest.png</file>
-<file>./data/images/skip-pressed.png</file>
-<file>./data/images/skip-rest.png</file>
-<file>./data/images/source-off-pressed.png</file>
-<file>./data/images/source-off-rest.png</file>
-<file>./data/images/source-on-pressed.png</file>
-<file>./data/images/source-on-rest.png</file>
-<file>./data/images/status-alert-icon.png</file>
-<file>./data/images/status-bar-bkg.png</file>
-<file>./data/images/status-dismiss-x.png</file>
-<file>./data/images/user-avatar.png</file>
-<file>./data/images/view-toggle-active-centre.png</file>
-<file>./data/images/view-toggle-active-left.png</file>
-<file>./data/images/view-toggle-active-right.png</file>
-<file>./data/images/view-toggle-icon-artist-active.png</file>
-<file>./data/images/view-toggle-icon-artist-inactive.png</file>
-<file>./data/images/view-toggle-icon-cloud-active.png</file>
-<file>./data/images/view-toggle-icon-cloud-inactive.png</file>
-<file>./data/images/view-toggle-icon-list-active.png</file>
-<file>./data/images/view-toggle-icon-list-inactive.png</file>
-<file>./data/images/view-toggle-inactive-centre.png</file>
-<file>./data/images/view-toggle-inactive-left.png</file>
-<file>./data/images/view-toggle-inactive-right.png</file>
-<file>./data/images/view-toggle-pressed-centre.png</file>
-<file>./data/images/view-toggle-pressed-left.png</file>
-<file>./data/images/view-toggle-pressed-right.png</file>
-<file>./data/images/volume-icon-full.png</file>
-<file>./data/images/volume-icon-muted.png</file>
-<file>./data/images/volume-slider-bkg.png</file>
-<file>./data/images/volume-slider-level.png</file>
-<file>./data/topbar-radiobuttons.css</file>
-<file>./data/icons/tomahawk-icon-16.png</file>
-<file>./data/icons/tomahawk-icon-32.png</file>
-<file>./data/icons/tomahawk-icon-64.png</file>
-<file>./data/icons/tomahawk-icon-128.png</file>
-<file>./data/icons/tomahawk-icon-256.png</file>
-<file>./data/icons/tomahawk-icon-512.png</file>
-</qresource>
+<RCC>
+    <qresource prefix="/">
+        <file>data/images/collection_background.png</file>
+        <file>data/images/playlist_background.png</file>
+        <file>data/images/filter.svg</file>
+        <file>data/images/folder.svg</file>
+        <file>data/images/loved.svg</file>
+        <file>data/images/love.svg</file>
+        <file>data/images/not-loved.svg</file>
+        <file>data/images/no-album-art-placeholder.svg</file>
+        <file>data/images/artist-placeholder-grid.svg</file>
+        <file>data/images/album-placeholder-grid.svg</file>
+        <file>data/images/track-placeholder-grid.svg</file>
+        <file>data/images/now-playing-speaker.svg</file>
+        <file>data/images/now-playing-speaker-dark.svg</file>
+        <file>data/images/playlist-icon.svg</file>
+        <file>data/images/shuffle.svg</file>
+        <file>data/images/repeat.svg</file>
+        <file>data/images/user-avatar.svg</file>
+        <file>data/images/list-add.svg</file>
+        <file>data/images/list-remove.svg</file>
+        <file>data/images/arrow-down-double.svg</file>
+        <file>data/images/view-refresh.svg</file>
+        <file>data/images/volume-icon.svg</file>
+        <file>data/images/echonest_logo.png</file>
+        <file>data/images/info.svg</file>
+        <file>data/images/back.svg</file>
+        <file>data/images/forward.svg</file>
+        <file>data/images/configure.svg</file>
+        <file>data/images/private-listening.svg</file>
+        <file>data/images/add.svg</file>
+        <file>data/images/recently-played.svg</file>
+        <file>data/images/supercollection.svg</file>
+        <file>data/images/sipplugin-online.svg</file>
+        <file>data/images/sipplugin-offline.svg</file>
+        <file>data/images/advanced-settings.svg</file>
+        <file>data/images/music-settings.svg</file>
+        <file>data/images/automatic-playlist.svg</file>
+        <file>data/images/station.svg</file>
+        <file>data/images/new-additions.svg</file>
+        <file>data/images/charts.svg</file>
+        <file>data/images/new-releases.svg</file>
+        <file>data/images/queue.svg</file>
+        <file>data/images/loved_playlist.svg</file>
+        <file>data/images/dashboard.svg</file>
+        <file>data/images/artist-icon.svg</file>
+        <file>data/images/album-icon.svg</file>
+        <file>data/images/track-icon.svg</file>
+        <file>data/images/search-icon.svg</file>
+        <file>data/images/star-hover.svg</file>
+        <file>data/images/starred.svg</file>
+        <file>data/images/star-unstarred.svg</file>
+        <file>data/images/apply-check.svg</file>
+        <file alias="data/icons/tomahawk-icon-16x16.png">data/icons/16x16-tomahawk-icon.png</file>
+        <file alias="data/icons/tomahawk-icon-32x32.png">data/icons/32x32-tomahawk-icon.png</file>
+        <file alias="data/icons/tomahawk-icon-64x64.png">data/icons/64x64-tomahawk-icon.png</file>
+        <file alias="data/icons/tomahawk-icon-128x128.png">data/icons/128x128-tomahawk-icon.png</file>
+        <file alias="data/icons/tomahawk-icon-256x256.png">data/icons/256x256-tomahawk-icon.png</file>
+        <file alias="data/icons/tomahawk-icon-512x512.png">data/icons/512x512-tomahawk-icon.png</file>
+        <file>data/sql/dbmigrate-22_to_23.sql</file>
+        <file>data/sql/dbmigrate-23_to_24.sql</file>
+        <file>data/sql/dbmigrate-24_to_25.sql</file>
+        <file>data/sql/dbmigrate-25_to_26.sql</file>
+        <file>data/sql/dbmigrate-26_to_27.sql</file>
+        <file>data/sql/dbmigrate-27_to_28.sql</file>
+        <file>data/sql/dbmigrate-28_to_29.sql</file>
+        <file>data/js/tomahawk.js</file>
+        <file>data/js/tomahawk-infosystem.js</file>
+        <file>data/js/rsvp-latest.min.js</file>
+        <file>data/images/drop-all-songs.svg</file>
+        <file>data/images/drop-local-songs.svg</file>
+        <file>data/images/drop-top-songs.svg</file>
+        <file>data/images/drop-song.svg</file>
+        <file>data/images/drop-album.svg</file>
+        <file>data/images/spotify-logo.png</file>
+        <file>data/images/itunes.png</file>
+        <file>data/images/uploading.svg</file>
+        <file>data/images/downloading.svg</file>
+        <file>data/images/headphones-off.svg</file>
+        <file>data/images/closed-padlock.svg</file>
+        <file>data/images/open-padlock.svg</file>
+        <file>data/images/headphones.svg</file>
+        <file>data/images/rdio.png</file>
+        <file>data/images/grooveshark.png</file>
+        <file>data/images/lastfm-icon.svg</file>
+        <file>data/images/spotifycore-logo.png</file>
+        <file>data/images/share.svg</file>
+        <file>data/images/process-stop.svg</file>
+        <file alias="data/icons/tomahawk-grayscale-icon-128x128.png">data/icons/128x128-tomahawk-grayscale-icon.png</file>
+        <file>data/images/collection.svg</file>
+        <file>data/misc/tomahawk_pubkey.pem</file>
+        <file>data/images/jump-link.svg</file>
+        <file>data/images/scrollbar-vertical-handle.png</file>
+        <file>data/images/scrollbar-horizontal-handle.png</file>
+        <file>data/images/subscribe-on.svg</file>
+        <file>data/images/subscribe-off.svg</file>
+        <file>data/images/add-contact.svg</file>
+        <file>data/images/account-none.svg</file>
+        <file>data/images/green-dot.svg</file>
+        <file>data/images/exfm.png</file>
+        <file>data/images/soundcloud.svg</file>
+        <file>data/images/resolver-default.svg</file>
+        <file>data/images/spotify-sourceicon.svg</file>
+        <file>data/images/account-offline.svg</file>
+        <file>data/images/account-online.svg</file>
+        <file>data/images/cancel.svg</file>
+        <file>data/images/delete.svg</file>
+        <file>data/images/ok.svg</file>
+        <file>data/images/tweet.svg</file>
+        <file>data/images/refresh.svg</file>
+        <file>data/images/inbox.svg</file>
+        <file>data/images/new-inbox.svg</file>
+        <file>data/images/outbox.svg</file>
+        <file>data/images/inbox-512x512.png</file>
+        <file>data/images/network-activity.svg</file>
+        <file>data/images/play.svg</file>
+        <file>data/images/pause.svg</file>
+        <file>data/fonts/Roboto-Bold.ttf</file>
+        <file>data/fonts/Roboto-Medium.ttf</file>
+        <file>data/fonts/Roboto-Regular.ttf</file>
+        <file>data/fonts/Roboto-Thin.ttf</file>
+        <file>data/sql/dbmigrate-29_to_30.sql</file>
+        <file>data/sql/dbmigrate-30_to_31.sql</file>
+        <file>data/images/trending.svg</file>
+        <file>data/www/auth.html</file>
+        <file>data/www/auth.na.html</file>
+        <file>data/www/tomahawk_auth_logo.png</file>
+        <file>data/www/css/animate.css</file>
+        <file>data/www/css/bootstrap.css</file>
+        <file>data/www/css/elements.css</file>
+        <file>data/www/css/font-awesome.css</file>
+        <file>data/www/css/style.css</file>
+        <file>data/www/js/html5shim.js</file>
+        <file>data/images/splash.svg</file>
+        <file>data/images/splash-unrounded.svg</file>
+        <file>data/js/cryptojs/aes.js</file>
+        <file>data/js/cryptojs/hmac-md5.js</file>
+        <file>data/js/cryptojs/hmac-ripemd160.js</file>
+        <file>data/js/cryptojs/hmac-sha1.js</file>
+        <file>data/js/cryptojs/hmac-sha3.js</file>
+        <file>data/js/cryptojs/hmac-sha224.js</file>
+        <file>data/js/cryptojs/hmac-sha256.js</file>
+        <file>data/js/cryptojs/hmac-sha384.js</file>
+        <file>data/js/cryptojs/hmac-sha512.js</file>
+        <file>data/js/cryptojs/md5.js</file>
+        <file>data/js/cryptojs/pbkdf2.js</file>
+        <file>data/js/cryptojs/rabbit.js</file>
+        <file>data/js/cryptojs/rabbit-legacy.js</file>
+        <file>data/js/cryptojs/rc4.js</file>
+        <file>data/js/cryptojs/ripemd160.js</file>
+        <file>data/js/cryptojs/sha1.js</file>
+        <file>data/js/cryptojs/sha3.js</file>
+        <file>data/js/cryptojs/sha224.js</file>
+        <file>data/js/cryptojs/sha256.js</file>
+        <file>data/js/cryptojs/sha384.js</file>
+        <file>data/js/cryptojs/sha512.js</file>
+        <file>data/js/cryptojs/tripledes.js</file>
+        <file>data/js/cryptojs-core.js</file>
+        <file>data/www/index.html</file>
+        <file>data/images/beatsmusic.svg</file>
+        <file>data/images/ipv6-logo.svg</file>
+        <file>data/images/whatsnew.svg</file>
+        <file>data/images/copy.svg</file>
+        <file alias="data/icons/tomahawk-icon-1024x1024.png">data/icons/1024x1024-tomahawk-icon.png</file>
+        <file>data/images/plugins.svg</file>
+        <file alias="data/icons/tomahawk-white-icon-128x128.png">data/icons/128x128-tomahawk-white-icon.png</file>
+        <file>data/images/repeat-all.svg</file>
+        <file>data/images/repeat-one.svg</file>
+        <file>data/images/downloads.svg</file>
+        <file>data/images/downloadbutton.svg</file>
+        <file>data/images/nav-back.svg</file>
+        <file>data/images/nav-forward.svg</file>
+        <file>data/sounds/silence.ogg</file>
+    </qresource>
 </RCC>

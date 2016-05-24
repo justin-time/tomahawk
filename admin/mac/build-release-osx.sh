@@ -1,10 +1,12 @@
 #!/bin/bash
 #
-# Usage: dist/build-relese-osx.sh [-j] [--no-clean]
+# Usage: ./admin/mac/build-release-osx.sh VERSION CERT_SIGNER [--no-clean]
 #
-# Adding the -j parameter results in building a japanese version.
 ################################################################################
 
+TARGET_NAME="Tomahawk"
+
+set -e
 
 function header {
     echo -e "\033[0;34m==>\033[0;0;1m $1 \033[0;0m"
@@ -17,32 +19,41 @@ function die {
 }
 ################################################################################
 
+if [ -z "$2" ]
+then
+    echo This script expects the version number and cert-signer as parameters, e.g. "1.0.0 John Doe"
+    exit 1
+fi
 
 ROOT=`pwd`
+VERSION=$1
+CERT_SIGNER=$2
 
-QTDIR=`which qmake`
-QTDIR=`dirname $QTDIR`
-QTDIR=`dirname $QTDIR`
-test -L "$QTDIR" && QTDIR=`readlink $QTDIR`
-
-export QMAKESPEC='macx-g++'
-export QTDIR
-export VERSION
 ################################################################################
 
+    header "Fixing and copying libraries"
+    $ROOT/../admin/mac/macdeploy.py "${TARGET_NAME}.app" quiet
 
-CLEAN='1'
-BUILD='1'
-NOTQUICK='1'
-CREATEDMG='1'
+    cd "${TARGET_NAME}.app"
 
-    header addQt
-    cd tomahawk.app
-#    $ROOT/admin/mac/add-Qt-to-bundle.sh \
-#                   'QtCore QtGui QtXml QtNetwork QtSql'
+    cp $ROOT/../admin/mac/qt.conf Contents/Resources/qt.conf
 
-    header deposx
-    $ROOT/admin/mac/deposx.sh
-    
-    header Done!
+    header "Fixing fonts"
+    mkdir "${ROOT}/${TARGET_NAME}.app/Contents/Resources/Fonts"
+    cp -R $ROOT/../data/fonts/*.ttf "${ROOT}/${TARGET_NAME}.app/Contents/Resources/Fonts"
 
+    header "Signing bundle"
+    cd ..
+    if [ -f ~/sign_step.sh ];
+    then
+        ~/sign_step.sh "$CERT_SIGNER" "${TARGET_NAME}.app"
+    fi
+
+    header "Creating DMG"
+    $ROOT/../admin/mac/create-dmg.sh "${TARGET_NAME}.app"
+    mv "${TARGET_NAME}.dmg" "${TARGET_NAME}-$VERSION.dmg"
+
+    header "Creating signed Sparkle update"
+#     $ROOT/../admin/mac/sign_bundle.rb "${TARGET_NAME}" $VERSION ~/tomahawk_sparkle_privkey.pem
+
+    header "Done!"
